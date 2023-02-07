@@ -471,5 +471,3 @@ while True:
         os._exit(0)
 
     sleep(PollingTime)
-Ctrl+
-M
