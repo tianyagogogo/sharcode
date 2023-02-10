@@ -37,7 +37,7 @@ TimeIntervalStart : bool = 1024
 #时间间隔最大
 TimeIntervalEnd : bool = 1678
 #回复内容
-ReplyContent : List = ['感谢分享''谢谢分享','多谢分享']
+ReplyContent : List = ['感谢分享','谢谢分享','多谢分享']
 #关键字屏蔽，主要防止签到贴
 ForbidContent : List = ['签到','专用贴','禁止无关回复']
 
