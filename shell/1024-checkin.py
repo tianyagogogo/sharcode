@@ -109,6 +109,8 @@ def get_tid( url) -> str:
 
 
 if __name__ == "__main__":
+    sleep_time = random.randint(100,1024)
+    time.sleep(sleep_time)
     load_cookies()
     is_valid_cookies()
     toThread0806Page()
