@@ -41,7 +41,7 @@ def load_cookies() -> None:
 
 #校验cookies是否有效
 def is_valid_cookies() -> bool:
-    sleep(2)
+    sleep(0.2)
     res = session.get(host_index , headers = headers)
     if res.text.find("上次登錄時間") != -1 :
         return True
@@ -50,19 +50,19 @@ def is_valid_cookies() -> bool:
 
 # 进入thread0806
 def toThread0806Page():
-    sleep(2)
+    sleep(0.2)
     res = session.get(thread0806_url,headers = headers)
    
 # 进入签到页面
 def toCheckinPage():
-    sleep(2)
+    sleep(0.2)
     print(checkin_url)
     res = session.get(checkin_url,headers = headers)
     print(res.text)
 
 
 def reply() -> None:
-    sleep(2)
+    sleep(0.2)
     title = get_title(checkin_url)
     content = reply_content
     tid = get_tid(checkin_url)
@@ -90,7 +90,7 @@ def reply() -> None:
 
  #获取给定url的主题名字
 def get_title(url) -> str:
-    sleep(2)
+    sleep(0.2)
     res = session.get(url = url , headers = headers)
     pat_title = '<b>本頁主題:</b> .*</td>'
     try:
